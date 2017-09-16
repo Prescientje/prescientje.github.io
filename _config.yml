@@ -1,8 +1,11 @@
 title: Welcome!
 description: The Homepage of James H Edwards
 google_analytics: 
+name: James H Edwards
+markdown: kramdown
 show_downloads: true
 theme: jekyll-theme-slate
 
 gems:
   - jekyll-mentions
+
