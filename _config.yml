@@ -5,6 +5,7 @@ name: James H Edwards
 markdown: kramdown
 show_downloads: true
 theme: jekyll-theme-slate
+permalink: /blog/:year/:month/:day/:title
 
 gems:
   - jekyll-mentions
