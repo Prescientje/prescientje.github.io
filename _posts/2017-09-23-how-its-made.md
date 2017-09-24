@@ -18,7 +18,7 @@ He walks through each step in extremely helpful detail and provided several inte
 Making a custom domain was more nerve-wracking but actually ended up being a bit easier. I bought this domain and then after being initially confused by the [guide on GitHub itself](https://help.github.com/articles/using-a-custom-domain-with-github-pages/), I searched for more.
 I found [Julia Lovett's guide](https://medium.com/@LovettLovett/github-pages-godaddy-f0318c2f25a) and combined that with the guide from GitHub and was able to figure it out.
 Because the guide fomr Julia is from 2014, the screenshots are bit out of date, so here is the key piece with my screenshot:
-![alt text](https://github.com/prescientje/prescientje.github.io/images/20170923/godaddy.png "GoDaddy Settings")
+![Godaddy Settings][pic1]
 After navigating to My Products, click the DNS button on the right of the domain listing. 
 Then you will want to:
 * set the A record to point to 192.30.252.153
@@ -27,3 +27,5 @@ Then you will want to:
 Somewhere I heard or read that it could take up to 24 hours for everything to connect together, but for me it worked within about 5 minutes.
 
 I hope you enjoyed this guide and if you have further questions feel free to contact me on [Twitter](https://twitter.com/ajamesedwards).
+
+[pic1]: https://github.com/Prescientje/prescientje.github.io/blob/master/images/20170923/godaddy.png?raw=true
