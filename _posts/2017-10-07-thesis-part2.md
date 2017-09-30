@@ -4,6 +4,11 @@ title: "My Senior Thesis - Part 2"
 date: 2017-10-07
 ---
 
+## Recap
+In my previous post I outlined the idea behind my senior thesis project and listed a few of the models I used to identify hand hygiene from wrist acceleration data.
+This post probably won't make much sense without reading the previous one first.
+
+## 
 All of these models had better-than-chance accuracy, and the results of the "both hands together tests" are summarized in the table below:
 <img src="./files/recallandaccuracy.png" alt="Accuracy and Recall" title="Accuracy and Recall">
 
