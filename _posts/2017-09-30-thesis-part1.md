@@ -18,6 +18,7 @@ I developed several models which I compared against each other to find their rel
 
 To develop these models, I used [Tensorflow, a Google Deep Learning library](https://www.tensorflow.org/). The overall flow of my program is summarized in the following diagram:
 
+{:.center}
 ![Pipeline Flow][flow]
 
 I preprocessed the data, then formatted it based on the window length mentioned above. Then I pushed it through Tensorflow for a while (several epochs of backpropagation), each step ideally increasing accuracy in the model. Then finally the model was tested with the test set to produce an actually percentage accuracy with which I could compare it against the other models.  
@@ -26,24 +27,28 @@ Below are illustrations of how the various models are connected with their parti
 
 ### The Original Model
 
+{:.center}
 ![Original Model][original]
 
 Here the X, Y, and Z data for each hand were put into separate matrices, which were then connected together to obtain an output.
 
 ### The Complex Model
 
+{:.center}
 ![Complex Model][complex]
 
 The "complex" model used the X, Y, and Z values, along with the X^2, Y^2, Z^2 values and the X\*Y, Y\*Z, and Z\*X values to evaluate any interplay from the axes of motion.
 
 ### The Layered Model
 
+{:.center}
 ![Layered Model][layered]
 
 The "layered" model just used the X, Y, and Z values from each hand together with one hidden layer of nodes. 
 
 ### The Five Layered Model
 
+{:.center}
 ![Five Layered Model][layered5]
 
 This model simply added layers to the Layered Model in order to (hopefully) increase accuracy even further.
@@ -55,6 +60,10 @@ My next post will summarize my results and offer some ideas for future work.
 
 [flow]: https://github.com/Prescientje/thesis/blob/master/images/pipeline3.png?raw=true
 [original]: https://github.com/Prescientje/thesis/blob/master/images/original.png?raw=true
+{: width="160px"}
 [complex]: https://github.com/Prescientje/thesis/blob/master/images/complex.png?raw=true
+{: width="160px"}
 [layered]: https://github.com/Prescientje/thesis/blob/master/images/layered.png?raw=true
+{: width="160px"}
 [layered5]: https://github.com/Prescientje/thesis/blob/master/images/layered5.png?raw=true
+{: width="160px"}
