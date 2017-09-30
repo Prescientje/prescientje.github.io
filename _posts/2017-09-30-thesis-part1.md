@@ -11,16 +11,18 @@ For my senior thesis project at the Rose-Hulman Institute of Technology, I worke
 Hand hygiene is a crucial part of keeping patients and healthcare workers healthy and safe. There are many guidelines on how and when workers should wash their hands, but being able to check the workers on their habits can be intrusive and would probably have too much overhead. Therefore, some level of automatic checking would be appropriate to ensure the guidelines are being followed to improve health overall. Dr. Galluzzi collected wrist acceleration data from several hospital workers, with samples of actual handwashing, random motion, and motion such as tying a shoe or unwrapping a piece of candy in order to represent confusing samples.
 
 ## Neural Networks
-In one sentence, neural networks specifically work by attempting to simulate the brain's interconnected neurons through matrix multiplications. The goal of developing a neural network is to have a low error rate on novel inputs (the 'test' set) after training on inputs with known outputs (the 'training' set). There are many guides which explain neural networks and deep learning much better than I ever could, so further information is left as an exercise to the reader (and I have always wanted to say that). 
+In one sentence, neural networks work by attempting to simulate the brain's interconnected neurons through matrix multiplications. The goal of developing a neural network is to have a low error rate on novel inputs (the 'test' set) after training on inputs with known outputs (the 'training' set). There are many guides which explain neural networks and deep learning much better than I ever could, so further information is left as an exercise to the reader (and I have always wanted to say that). 
 
 ## My Models
-I developed several models which I compared against each other to find their relative effectiveness. I used varying window lengths to test each model, i.e. I looked at samples that were 0.5 seconds, 1.0 second, 1.5 seconds, 2.0 seconds, as well as a few more. Below are a few illustrations of how the various models are connected with their particular features.
+I developed several models which I compared against each other to find their relative effectiveness. I used varying window lengths to test each model, i.e. I looked at samples that were 0.5 seconds, 1.0 second, 1.5 seconds, 2.0 seconds, as well as a few more.
 
 To develop these models, I used [Tensorflow, a Google Deep Learning library](https://www.tensorflow.org/). The overall flow of my program is summarized in the following diagram:
 
 ![Pipeline Flow][flow]
 
 I preprocessed the data, then formatted it based on the window length mentioned above. Then I pushed it through Tensorflow for a while (several epochs of backpropagation), each step ideally increasing accuracy in the model. Then finally the model was tested with the test set to produce an actually percentage accuracy with which I could compare it against the other models.  
+
+Below are illustrations of how the various models are connected with their particular features.
 
 ### The Original Model
 
@@ -46,7 +48,10 @@ The "layered" model just used the X, Y, and Z values from each hand together wit
 
 This model simply added layers to the Layered Model in order to (hopefully) increase accuracy even further.
 
+
+## All For Now
 My next post will summarize my results and offer some ideas for future work.
+
 
 [flow]: https://github.com/Prescientje/thesis/blob/master/images/pipeline3.png?raw=true
 [original]: https://github.com/Prescientje/thesis/blob/master/images/original.png?raw=true
