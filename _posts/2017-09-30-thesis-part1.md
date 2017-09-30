@@ -60,10 +60,10 @@ My next post will summarize my results and offer some ideas for future work.
 
 [flow]: https://github.com/Prescientje/thesis/blob/master/images/pipeline3.png?raw=true
 [original]: https://github.com/Prescientje/thesis/blob/master/images/original.png?raw=true
-{: width="160px"}
+{: width="600px" .center}
 [complex]: https://github.com/Prescientje/thesis/blob/master/images/complex.png?raw=true
-{: width="160px"}
+{: width="600px" .center}
 [layered]: https://github.com/Prescientje/thesis/blob/master/images/layered.png?raw=true
-{: width="160px"}
+{: width="600px" .center}
 [layered5]: https://github.com/Prescientje/thesis/blob/master/images/layered5.png?raw=true
-{: width="160px"}
+{: width="600px" .center}

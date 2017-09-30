@@ -11,19 +11,19 @@ This post probably won't make much sense without reading the previous one first.
 ## Results
 I used two major statistical ideas to compare my models against each other. The first was recall, which is the percentage of hand hygiene samples that were accurately identified (so this value ignores the non-hand hygiene samples). The second was accuracy, which is the total number of correct results overall.
 
-{:.center}
 ![Recall Results][recall]
-
 {:.center}
+
 ![Accuracy Results][accuracy]
+{:.center}
 
 These results are not particularly surprising to me. The two best-performing models, L5 (Five Layered Model) and C5 (Complex Five Layered Model) were also the models with the most provision for structure and contained the most complexity. I am satisfied that all of the models performed better than chance, however.
 One very interesting issue arose at sample lengths 150 and 225 (which are window lengths of 1.5 seconds and 2.25 seconds). I believe that those specific times performed much worse due to the interaction between the frequency of the handwashing motion and the window length; if that's not the case then I don't really have an idea about why those lengths were so poor relative to the others.
 
 One other aspect I looked at was just taking a single hand at a time and getting results from there.
 
-{:.center}
 ![Handedness Results][handedness]
+{:.center}
 
 Somewhat surprisingly, just looking at the right hand gave a higher accuracy than just the left hand. I supposed this difference was based on how most people are right handed, and the actions of the dominant hand must be more recognizable during handwashing compared to the other hand.
 
